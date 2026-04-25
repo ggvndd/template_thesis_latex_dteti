@@ -1,103 +1,199 @@
 \chapter{Literature Review}
 
-\section{Foundational Theory}
+\section{Literature Review}
 
-\subsection{Gig Economy and Non-Traditional Workers}
+\subsection{State-of-the-Art Literature}
 
-The gig economy is a digital platform-based economic model that facilitates temporary or task-based work, where workers earn income from short-term projects without permanent employment ties \cite{wood2019goodgig}. According to the International Labour Organization (ILO), the gig economy is characterized by high flexibility, worker autonomy, but also income uncertainty and a lack of social protections \cite{ilo2025worldemployment}. In Indonesia, the number of informal workers (including gig workers and part-timers) reached approximately 86.58 million people in February 2025 (59.4\% of the total workforce according to BPS), with subsets of platform-based gig work---such as freelancing in graphic design, website development, photography, and others---continuing to grow rapidly among young people \cite{bps2025tenagakerja}. The majority of these workers are young, and many are students who engage in side gigs or part-time jobs to supplement their income.
+A comprehensive review of prior studies on gig economy burnout, digital interventions, and adaptive UI/UX design reveals significant research spanning 2019--2025. Table \ref{tab:literature-review} summarizes key studies by title, year, authors, methods, main findings, and identified gaps.
 
-Non-traditional workers, particularly students, often face a double burden between academic responsibilities and work, leading to high psychological pressure \cite{syiahkuala2024burnout}. Key characteristics of gig work include the use of platform algorithms for task allocation, rating systems that influence earnings, and social isolation due to limited face-to-face interactions \cite{frontiers2025gigwork}. These conditions make gig workers vulnerable to mental health issues, such as burnout. This foundational theory serves as the basis for understanding the context of non-traditional workers in Indonesia, which will later be linked to burnout risks and potential digital interventions.
 
-\subsection{Burnout}
+\begin{table}[p]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{0.85}
+\caption{Summary of Prior Studies on Gig Economy, Burnout, and Digital Interventions}
+\label{tab:literature-review}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.18\textwidth}
+			  >{\centering\arraybackslash}p{0.045\textwidth}
+			  >{\raggedright\arraybackslash}p{0.12\textwidth}
+			  >{\raggedright\arraybackslash}p{0.16\textwidth}
+			  >{\raggedright\arraybackslash}p{0.18\textwidth}
+			  >{\raggedright\arraybackslash}p{0.16\textwidth}}
+\hline
+\textbf{Title} & \textbf{Year} & \textbf{Author(s)} & \textbf{Methods} & \textbf{Main Findings} & \textbf{Gap / Limitations} \\
+\hline
+Good Gig, Bad Gig: Autonomy and Algorithmic Control in the Gig Economy & 2019 & Wood et al. & Qualitative interviews ($n=150$, global) & Gig work offers flexibility but algorithmic control causes stress and burnout. & Lacks digital interventions focus; global sample. \\
+\hline
+World Employment and Social Outlook & 2025 & ILO & Secondary data from global surveys & 41\% of Indonesian gig workers experience income uncertainty, increasing burnout by 50--60\%. & Aggregate data; lacks mHealth intervention details. \\
+\hline
+Gambaran Burnout pada Mahasiswa Pekerja Paruh Waktu & 2024 & Syiah Kuala Psychology Journal & Cross-sectional survey ($n=200$) & 91\% of part-time students experience burnout; main factor: algorithmic pressure. & No digital intervention evaluation; limited local sample. \\
+\hline
+Digital Interventions for Gig Workers & 2025 & JMIR Human Factors & Scoping review (50+ studies) & mHealth apps reduce stress by up to 20\%, but lack adaptability. & Minimal adaptive UI studies; global focus, lacks Indonesian context. \\
+\hline
+Understanding Communication Patterns in Coping with Stress & 2025 & Juddi et al. (Unpad) & Qualitative phenomenological ($n=5$) & Mutual-aid communities reduce stress; platform algorithms cause exhaustion. & Lacks digital interventions; small sample. \\
+\hline
+Work Support and Resilience & 2025 & ResearchGate & SEM-PLS survey ($n=200$) & Stress mediates support-resilience relationship; workers vulnerable to health issues. & Non-digital focus; needs longitudinal tech studies. \\
+\hline
+Influence of Digital Platforms on Gig Workers & 2025 & Alauddin et al. & PRISMA review (18 articles) & Algorithmic control and lack of protection cause burnout. & Lacks Indonesian focus; gap in adaptive interventions. \\
+\hline
+What Drives Gig Worker Success & 2025 & Putra et al. (UMY) & SEM-PLS survey ($n=235$) & Experience and self-learning improve performance. & Cross-sectional; gap in digital learning tools. \\
+\hline
+Effects of Workload on Gig Workers' Productivity & 2025 & Devi et al. & Multiple regression ($n=$ workers) & Technological support reduces stress and increases productivity. & Urban focus; gap in rural areas. \\
+\hline
+Representation of Gig Workers in Indonesian Digital Media & 2025 & Murda et al. & Qualitative CDA (120+ texts) & Media glorifies flexibility but ignores vulnerabilities. & Focus on representation; gap in empirical mHealth. \\
+\hline
+Gig Economy as Stepping Stone & 2023 & Permana (LSE) & Interviews ($n=50$) & Gig work enables career growth but causes isolation and burnout. & Career focus; gap in digital health interventions. \\
+\hline
+Transformative Dynamics of Gig Economy & 2025 & Srihita et al. & Bibliometric analysis (549 docs) & Technology improves well-being but causes precarity. & Lacks sector-specific and algorithmic ethics focus. \\
+\hline
+Mood Tracker App With AI Insights: UX/UI Case Study & 2025 & Reddy & UX/UI prototype design & Adaptive AI increases awareness; playful UI reduces stress. & Not empirical; gap in real-user gig worker evaluation. \\
+\hline
+UX for Mental Health: Latest Trends 2025 & 2025 & Vrunik Design & UX trends review & Personalization and calming elements are effective. & Non-empirical; gap in Indonesian gig-specific context. \\
+\hline
+Enhancing Wellbeing Through UX/UI Optimized Mental Health App & 2025 & Saithong et al. & Pre-post evaluation ($n=50$) & Adaptive UX/UI increases resilience and engagement. & Prototype phase; gap in cultural adaptation. \\
+\hline
+Digital Burnout and Mental Health of Gen Z & 2025 & Nugraheni et al. & SEM-PLS survey ($n=100$) & Digital burnout predicts poor mental health; stress mediates. & Cross-sectional; limited sample, gap in adaptive interventions. \\
+\hline
+Effectiveness of Digital Interventions in Occupational Stress & 2024 & Indra et al. (PMC) & Systematic review (15 RCTs) & Digital apps reduce stress for 3--12 months. & High heterogeneity; gap in LMICs like Indonesia. \\
+\hline
+Culturally Adapted Internet-Delivered Mindfulness Intervention & 2025 & Listiyandini et al. & RCT ($n=156$) & Online mindfulness reduces distress ($g=0.48$--$1.18$); sustained 1 month. & Short follow-up; gap in adaptive UI. \\
+\hline
+\end{tabular}
+\end{table}
 
-Burnout is defined as a psychological syndrome characterized by emotional exhaustion, depersonalization (cynical attitudes toward work), and reduced personal accomplishment (a diminished sense of self-efficacy) \cite{maslach2016burnout}. The most commonly used framework for measuring burnout is the Maslach Burnout Inventory (MBI), developed by Christina Maslach, which assesses these three main dimensions \cite{maslach1996mbi}.
+\subsection{Research Gap and Novelty}
 
-In the gig economy, burnout is often triggered by factors such as job insecurity, algorithmic management (pressure from ratings and platform algorithms), and a lack of work-life balance \cite{pmc2025scopingreview}. Studies indicate that gig workers face a 50--60\% higher risk of burnout compared to permanent employees, with symptoms including chronic fatigue and decreased motivation \cite{jmir2025digitalinterventions}. In Indonesia, students with side gigs or part-time jobs also experience high burnout rates, reaching up to 91\% in some local samples, due to schedule conflicts between studies and work, as well as algorithmic pressures from platforms \cite{syiahkuala2024burnout, rimtb2024burnout}.
+From the review of prior studies, it is evident that non-traditional workers in Indonesia face a high risk of burnout, with 41\% of gig workers experiencing income uncertainty and 91\% of part-time students experiencing burnout due to schedule conflicts and algorithmic pressures. Several studies have demonstrated the effectiveness of digital interventions, such as mHealth applications and mood trackers, in reducing stress symptoms by up to 20\%, though most studies remain general or focused on global populations.
 
-\subsection{Mental Health and mHealth Applications}
+The primary gap identified in current literature is the scarcity of localized studies integrating Large Language Model (LLM) based mood trackers with adaptive UI elements—such as context-aware visual simplification and one-tap inputs—specifically designed for young gig workers in Indonesia. Existing research lacks comprehensive evaluation using metrics that encompass both mechanical efficiency (Time on Task) and emotional/personalization aspects (Emotional Response Index and Personalization Effectiveness Index).
 
-Mental health refers to a state of emotional, psychological, and social well-being that enables individuals to cope with daily stressors \cite{who2022mentalhealth}. In the digital era, mobile health (mHealth) applications have become increasingly popular as self-help interventions, including chatbots and mood trackers for emotion journaling and early stress pattern detection \cite{jmir2025chatbot}. Examples such as Woebot and Wysa use chatbots to provide conversational support and mood tracking, which have been shown to reduce anxiety symptoms by up to 20\% among regular users \cite{fitzpatrick2017woebot}. Recent trends indicate increased mHealth adoption post-pandemic, particularly for stigma-free self-tracking, with high effectiveness among young populations.
+Therefore, this study addresses this gap by designing an adaptive UI/UX prototype integrated with the Gemma 3 API, targeted at Universitas Gadjah Mada (UGM) students with side gigs. The evaluation employs a controlled, within-subjects A/B testing approach, measuring three key metrics: Time on Task (ToT) for task efficiency, Emotional Response Index (ERI) for positive emotional impact, and Personalization Effectiveness Index (PEI) for contextual awareness. This targeted approach is expected to provide novel contributions to digital mental health interventions for non-traditional workers in Indonesia.
 
-Mood trackers are a core feature in mHealth apps, allowing users to log daily emotions, identify triggers, and view trends through simple visualizations (e.g., line graphs) \cite{torous2020moodtracking}. This feature is effective for burnout management as it supports self-awareness without requiring direct professional intervention.
+\section{Theoretical Review}
 
-\subsection{Basic Principles of UI/UX}
+\subsection{The Problem Space: Gig Economy and Burnout}
 
-\subsubsection{Context-Aware and Adaptive Interfaces}
+\subsubsection{The Gig Economy and Non-Traditional Workers}
 
-Adaptive UI/UX, or a context-aware interface, is an extension of standard usability principles that allows an interface to dynamically adjust itself based on user context, including available time, location, stress levels, physical activity, or input preferences \cite{benyon2014interactive}. According to Calvary et al. \cite{calvary2003plasticity}, this adaptation encompasses the plasticity of user interfaces, where the system can automatically alter its layout, content, or interaction modes to enhance flexibility and efficiency of use (aligning with Nielsen's sixth heuristic). In the context of non-traditional workers with irregular schedules and high cognitive loads, adaptations such as switching to one-tap emojis during busy periods, offering voice input while mobile (e.g., driving or multitasking in a side gig), and simplifying trend visualizations during high stress are crucial for reducing cognitive load and increasing emotional engagement. This approach remains grounded in User-Centered Design but adds a contextual layer that bridges the gaps found in conventional mHealth applications.
+The gig economy is a digital platform-based economic model that facilitates temporary or task-based work, where workers earn income from short-term projects without permanent employment ties. According to the International Labour Organization (ILO), the gig economy is characterized by high flexibility and worker autonomy, but also income uncertainty and a lack of social protections. In Indonesia, the number of informal workers (including gig workers and part-timers) reached approximately 86.58 million people in February 2025 (59.4\% of the total workforce according to BPS), with subsets of platform-based gig work—such as freelancing in graphic design, website development, and photography—continuing to grow rapidly among young people. The majority of these workers are young, and many are students who engage in side gigs or part-time jobs to supplement their income.
 
-\subsubsection{Cognitive Load and Hick's Law in UI Design}
+Non-traditional workers, particularly students, often face a double burden between academic responsibilities and work, leading to high psychological pressure. Key characteristics of gig work include the use of platform algorithms for task allocation, rating systems that influence earnings, and social isolation due to limited face-to-face interactions. These conditions make gig workers vulnerable to mental health issues, such as burnout. This foundational theory serves as the basis for understanding the context of non-traditional workers in Indonesia, which will later be linked to burnout risks and potential digital interventions.
 
-The necessity for an adaptive interface in this study is theoretically driven by John Sweller's Cognitive Load Theory, specifically the need to minimize extraneous cognitive load---the mental effort required to process poorly designed or overly complex interfaces \cite{sweller1988cogload}. For gig workers experiencing burnout, their working memory capacity is already severely depleted. To address this, the adaptive UI relies heavily on the Hick--Hyman Law (Hick's Law), which states that the time it takes for a person to make a decision increases logarithmically with the number and complexity of choices presented. By intentionally restricting the number of interactive elements, buttons, and navigation menus during high-stress periods, the application minimizes the decision-making time, thereby mathematically reducing the user's extraneous cognitive load and lowering the barrier to daily mood logging.
+\subsubsection{Burnout Frameworks and Psychological Impact}
 
-\subsubsection{Usability Principles and Iterative Design Framework}
+Burnout is defined as a psychological syndrome characterized by emotional exhaustion, depersonalization (cynical attitudes toward work), and reduced personal accomplishment (a diminished sense of self-efficacy). The most commonly used framework for measuring burnout is the Maslach Burnout Inventory (MBI), developed by Christina Maslach, which assesses these three main dimensions.
 
-Human-Computer Interaction (HCI) is a field of study that examines the interactions between humans and computer systems, aiming to create usable, useful, and user-friendly interfaces \cite{dix2004hci}. The usability principles proposed by Jakob Nielsen serve as a primary foundation in UI/UX design, consisting of ten heuristics \cite{nielsen1993usability}:
+In the gig economy, burnout is often triggered by factors such as job insecurity, algorithmic management (pressure from ratings and platform algorithms), and a lack of work-life balance. Studies indicate that gig workers face a 50--60\% higher risk of burnout compared to permanent employees, with symptoms including chronic fatigue and decreased motivation. In Indonesia, students with side gigs or part-time jobs also experience high burnout rates, reaching up to 91\% in some local samples, due to schedule conflicts between studies and work, as well as algorithmic pressures from platforms.
 
-\begin{enumerate}
-	\item Visibility of system status (users always know what is happening).
-	\item Match between system and the real world (language and concepts align with the user's real world).
-	\item User control and freedom (users have control and can undo actions).
-	\item Consistency and standards (consistent with general conventions).
-	\item Error prevention, recognition, and recovery.
-	\item Flexibility and efficiency of use (suitable for both novices and experts).
-	\item Aesthetic and minimalist design.
-	\item Help users recognize, diagnose, and recover from errors.
-	\item Help and documentation.
-\end{enumerate}
+\subsubsection{Clinical Screening for Mental Fatigue (PHQ-9)}
 
-To apply these heuristics effectively, this study adopts a Literature-Driven Iterative Design approach inspired by human-centered design principles. Traditionally, design cycles involve understanding the context of use, specifying user requirements, designing solutions, and evaluating against those requirements \cite{iso9241210}. In this study, the initial understanding of user context and requirements is achieved by synthesizing established academic literature regarding the cognitive load and burnout of non-traditional workers. This ensures the interface is theoretically grounded to support users experiencing high stress. Subsequently, the evaluation phase directly involves users in controlled settings to test the prototype's efficiency and emotional impact against those requirements.
+While the Maslach Burnout Inventory (MBI) evaluates occupational burnout, evaluating the broader psychological distress of non-traditional workers requires established screening tools. The Patient Health Questionnaire-9 (PHQ-9) is a widely validated diagnostic instrument used to measure the severity of depressive symptoms and mental fatigue.
 
-These principles form the basis for designing the UI/UX of the mood tracker application, where good usability can enhance user engagement and the effectiveness of self-help interventions for burnout management. However, for users in specific contexts like non-traditional workers, these standard heuristics must be extended into adaptive UI/UX, as discussed in the technical concepts below.
+Comprising nine items evaluated on a 4-point Likert scale, the PHQ-9 assesses factors such as sleep disruption, energy loss, and cognitive exhaustion. While a score of 10 or higher indicates moderate-to-severe clinical distress requiring professional intervention, a score below 9 indicates mild to sub-clinical psychological fatigue. In the context of Human-Computer Interaction (HCI), specifically for non-medical self-help applications, targeting users with a PHQ-9 score below 9 is a strict ethical requirement. This ensures the digital intervention is evaluated safely as a preventative tool for early-stage gig-worker burnout, protecting highly vulnerable populations from being tested outside of clinical supervision.
 
-\section{Technical Concepts}
+\subsection{Current Digital Interventions}
 
-\subsection{Mood Tracker in Mental Health Applications}
+\subsubsection{mHealth Applications and Mood Trackers}
 
-A mood tracker is a feature in mobile health (mHealth) applications that enables users to log their daily emotional states, identify stress triggers, and visualize emotional patterns through simple graphs \cite{torous2020moodtracking}. The primary functions of a mood tracker include:
+Mental health refers to a state of emotional, psychological, and social well-being that enables individuals to cope with daily stressors. In the digital era, mobile health (mHealth) applications have become increasingly popular as self-help interventions, including chatbots and mood trackers for emotion journaling and early stress pattern detection. Examples such as Woebot and Wysa use chatbots to provide conversational support and mood tracking, which have been shown to reduce anxiety symptoms by up to 20\% among regular users. Recent trends indicate increased mHealth adoption post-pandemic, particularly for stigma-free self-tracking, with high effectiveness among young populations.
+
+A mood tracker is a feature in mHealth applications that enables users to log their daily emotional states, identify stress triggers, and visualize emotional patterns through simple graphs. This feature is effective for burnout management as it supports self-awareness without requiring direct professional intervention. The primary functions of a mood tracker include:
 
 \begin{enumerate}
 	\item \textbf{Emotion logging:} Users select or write their mood condition (e.g., stressed, calm, tired) along with triggers (e.g., work deadlines or traffic jams).
 	\item \textbf{Trend visualization:} Displaying data in the form of line graphs or pie charts to observe burnout patterns over specific periods.
-	\item \textbf{Basic insights:} Providing simple recommendations based on patterns, such as ``You often feel stressed at night; try resting earlier.''
+	\item \textbf{Basic insights:} Providing simple recommendations based on patterns.
 \end{enumerate}
 
-In the context of non-traditional workers, mood trackers have significant potential as effective self-help tools, allowing burnout monitoring without direct professional intervention \cite{jmir2025digitalinterventions}. Applications such as Daylio or Moodpath have demonstrated that regular mood tracking can increase self-awareness by up to 25\% among users with chronic stress symptoms \cite{fitzpatrick2017woebot}. Integration with prebuilt chatbots (e.g., Gemma 3) enables the mood tracker to deliver simple conversational responses, such as ``Thank you for sharing; what was the trigger today?'' Adaptive examples include a simplified UI when the user is in busy hours.
+Applications such as Daylio or Moodpath have demonstrated that regular mood tracking can increase self-awareness by up to 25\% among users with chronic stress symptoms. Integration with prebuilt chatbots enables the mood tracker to deliver simple conversational responses.
 
-\subsection{Usability Metrics for UI/UX Evaluation}
+\subsubsection{Psychological Framework of Digital Interventions}
 
-Evaluating UI/UX in mental health applications requires metrics that not only measure ease of use but also emotional impact and personalization. This study employs three adapted and specifically developed metrics for the context of non-traditional workers with high cognitive load.
+The conversational agent in this study does not aim to provide clinical therapy or psychiatric diagnosis. Instead, the chatbot's interactions are grounded in the psychological principles of Empathetic Active Listening and simplified Cognitive Behavioral Psychoeducation. Active listening in a digital context involves validating the user's reported emotions without immediate judgment or unsolicited problem-solving, which has been shown to significantly reduce acute emotional distress. Furthermore, by prompting users to identify the specific triggers of their burnout, the chatbot facilitates self-reflection. This aligns with the self-monitoring principles of Cognitive Behavioral Therapy (CBT), where identifying the relationship between environmental triggers and emotional responses is the first step in effective stress management and emotional regulation for non-traditional workers.
 
-\subsubsection{Time on Task (ToT)}
+\subsection{Theoretical Foundations of UI/UX}
 
-Time on Task (ToT) is the standard usability metric for measuring interaction efficiency, replacing completion rate metrics when the primary goal is assessing cognitive load reduction. Based on the ISO 9241-11 usability framework, efficiency is quantified by the exact duration (in seconds) a user requires to successfully complete a specific scenario, such as logging a mood and its trigger \cite{iso92411}.
+\subsubsection{Usability Principles and Iterative Design (Nielsen's Heuristics)}
 
-By utilizing a within-subjects A/B testing design, this study compares the ToT of the standard interface against the adaptive ``Rush Hour'' interface. A statistically significant reduction in ToT serves as empirical evidence that the adaptive UI successfully minimizes extraneous cognitive load for non-traditional workers.
+Human-Computer Interaction (HCI) is a field of study that examines the interactions between humans and computer systems, aiming to create usable, useful, and user-friendly interfaces. The usability principles proposed by Jakob Nielsen (1993) serve as a primary foundation in UI/UX design, consisting of ten heuristics.
+
+To apply these heuristics effectively, this study adopts a Literature-Driven Iterative Design approach inspired by human-centered design principles. Traditionally, design cycles involve understanding the context of use, specifying user requirements, designing solutions, and evaluating against those requirements. In this study, the initial understanding of user context and requirements is achieved by synthesizing established academic literature regarding the cognitive load and burnout of non-traditional workers.
+
+\subsubsection{Cognitive Load Theory and Hick's Law}
+
+The necessity for an adaptive interface in this study is theoretically driven by John Sweller's Cognitive Load Theory, specifically the need to minimize extraneous cognitive load—the mental effort required to process poorly designed or overly complex interfaces. For gig workers experiencing burnout, their working memory capacity is already severely depleted.
+
+To address this, the adaptive UI relies heavily on the Hick-Hyman Law (Hick's Law), which states that the time it takes for a person to make a decision increases logarithmically with the number and complexity of choices presented. By intentionally restricting the number of interactive elements, buttons, and navigation menus during high-stress periods, the application minimizes the decision-making time, thereby mathematically reducing the user's extraneous cognitive load and lowering the barrier to daily mood logging.
+
+\subsubsection{Adaptive UI/UX as an Extension of Standard Principles}
+
+Adaptive UI/UX, or a context-aware interface, is an extension of standard usability principles that allows an interface to dynamically adjust itself based on user context, including available time, location, stress levels, physical activity, or input preferences. According to Calvary et al. (2003), this adaptation encompasses the plasticity of user interfaces, where the system can automatically alter its layout to enhance flexibility and efficiency of use.
+
+In the context of non-traditional workers with irregular schedules, adaptations such as switching to one-tap emojis during busy periods, offering voice input while mobile, and simplifying trend visualizations during high stress are crucial for reducing cognitive load and increasing emotional engagement. Relevant adaptation examples for mood trackers include:
+
+\begin{itemize}
+	\item \textbf{Adaptive user interface:} Adjusting the application's layout based on the busy hours the user is currently experiencing (e.g., transitioning to a simplified ``Rush Hour'' mode).
+	\item \textbf{Contextual visualization:} Simplifying graphs when users report high stress levels to avoid information overload.
+	\item \textbf{Personalized prompts:} Adjusting chatbot questions based on previous mood patterns.
+\end{itemize}
+
+\subsection{Backend Architecture and System Ethics}
+
+\subsubsection{Large Language Model Architecture via Gemma 3 API}
+
+This study utilizes the Gemma 3 4B model via API as the core conversational engine for Natural Language Understanding (NLU) and response generation. With its massive 128K context window, the Gemma 3 model is capable of maintaining multi-turn conversational context, retaining user mood history, and generating natural, empathetic responses.
+
+When a user submits an input, the mobile client constructs a payload consisting of three elements: (1) the strict System Prompt (acting as the ethical guardrail), (2) the user's recently logged mood data (acting as contextual memory), and (3) the user's raw text input. This payload is processed by the Gemma 3 4B model, allowing the application to parse complex, unstructured human emotion with significantly higher accuracy and conversational fluidity.
+
+\subsubsection{Ethical Considerations in Mental Health Apps}
+
+The development and evaluation of mental health applications must adhere to strict ethical principles, including data privacy, informed consent, and avoiding clinical diagnoses. This study applies guidelines from ISO 9241-210 and WHO recommendations for digital mental health interventions by ensuring all mood data is securely stored in Firebase (end-to-end encryption) and the chatbot is restricted to supportive assistance without therapeutic claims.
+
+This ethics protocol also includes algorithmic guardrails implemented via System Prompting to prevent negative or risky responses. Furthermore, an opt-out mechanism is available at any time, ensuring the research remains safe and responsible for student participants at risk of burnout.
+
+\subsection{Evaluation Metrics}
+
+Evaluating UI/UX in mental health applications requires metrics that measure not only mechanical ease of use but also emotional impact. Standard HCI metrics are often insufficient for evaluating highly stressed populations. Therefore, this study employs three specifically justified metrics:
+
+\subsubsection{Interaction Efficiency: Time on Task (ToT)}
+
+Time on Task (ToT) is the standard usability metric for measuring interaction efficiency. Based on the ISO 9241-11 usability framework, efficiency is quantified by the exact duration (in seconds) a user requires to successfully complete a specific scenario. In standard usability testing, Completion Rate is often the primary metric. However, for a mood-tracking application, the interface is simple enough that the completion rate will invariably be near 100\%. Therefore, this study utilizes Time on Task (ToT) as the definitive measure of efficiency. By tracking the exact duration in seconds required to log a mood, ToT acts as a direct proxy for Sweller's Extraneous Cognitive Load. A statistically significant reduction in ToT mathematically proves that the adaptive interface requires less mental effort to navigate than a standard digital interface.
+
+The statistical significance of the ToT difference is calculated using the Paired-samples t-test. The formula used to determine the t-statistic is:
+\[t = \frac{\bar{d}}{s_d / \sqrt{n}}\]
+where $\bar{d}$ is the mean of the differences between the two UI conditions, $s_d$ is the standard deviation of those differences, and $n$ is the sample size ($N=30$). Practical significance is measured using Cohen's $d_z$ for effect size:
+\[d_z = \frac{\bar{d}}{s_d}\]
 
 \subsubsection{Emotional Response Index (ERI)}
 
-ERI assesses the user's affective response to the interface, a crucial component for mental health applications designed for high-stress demographics. To ensure construct validity, the ERI questionnaire items are theoretically grounded in the emotional valence dimensions of the mHealth App Usability Questionnaire (MAUQ) \cite{zhou2019mauq} and the Positive and Negative Affect Schedule (PANAS) \cite{watson1988panas}. Evaluated on a 5-point Likert scale, items measure subjective feelings of relief, support, and reduced anxiety post-interaction, ensuring usability evaluations extend beyond mechanical efficiency to include psychological impact. The ERI items are as follows:
+To measure the affective success of the application, this study adapted the Emotional Response Index (ERI). Existing clinical metrics, such as the Positive and Negative Affect Schedule (PANAS), are excellent for clinical diagnoses but are too broad to evaluate a 20-second digital interaction. Conversely, standard HCI surveys like the mHealth App Usability Questionnaire (MAUQ) focus heavily on app mechanics rather than user emotions. ERI bridges this gap. By fusing the emotional valence of PANAS with the digital context of MAUQ, ERI specifically evaluates whether the micro-interaction of using the app actively reduced the user's acute frustration, rather than simply measuring if the app was ``easy to use.'' Because ERI is a composite psychometric index derived from Likert-scale questionnaires, its internal consistency is mathematically validated before analysis using Cronbach's Alpha ($\alpha$):
+\[\alpha = \frac{k}{k-1} \left( 1 - \frac{\sum \sigma_{y_i}^2}{\sigma_x^2} \right)\]
+where $k$ refers to the number of test items, $\sum \sigma_{y_i}^2$ is the sum of the item variances, and $\sigma_x^2$ is the variance of the total composite score.
+
+The evaluation items for ERI measure whether the app actively reduces frustration and promotes calm, rather than just measuring usability. Example items include:
 
 \begin{enumerate}
 	\item The application's interface helps me process my emotions without feeling mentally drained.
 	\item The simplified visual design of the application makes me feel calm even when I am in a rush.
-	\item The chatbot's empathetic responses made me feel heard and supported.
-	\item I felt a sense of relief after logging my mood using the ``Rush Hour'' feature.
-	\item The application provides a safe and comfortable space for me to reflect on my daily stress triggers.
 	\item Interacting with the application during a busy shift did not increase my anxiety or frustration.
-	\item The chatbot's conversational tone is soothing and appropriate for someone experiencing burnout.
-	\item Overall, interacting with this application positively impacts my emotional well-being.
 \end{enumerate}
 
 \subsubsection{Personalization Effectiveness Index (PEI)}
 
-PEI evaluates the system's ability to dynamically align with the user's contextual needs. To ensure reliability, the evaluation items for this metric are adapted from the Perceived Personalization Scale commonly used in HCI research \cite{komiak2006personalization}. Assessed via a 5-point Likert scale, the PEI measures the user's perception of the system's contextual awareness, evaluating factors such as the relevance of the Gemma 3 LLM prompts and the timeliness of the adaptive UI triggers (e.g., anticipating the preferred input method during busy periods). The PEI items are as follows:
+PEI evaluates the system's ability to dynamically align with the user's contextual needs. The evaluation items for this metric are adapted from the Perceived Personalization Scale commonly used in HCI research. Assessed via a 5-point Likert scale, the PEI measures the user's perception of the system's contextual awareness, evaluating factors such as the relevance of the Gemma 3 LLM prompts and the timeliness of the adaptive UI triggers. Like ERI, the reliability of the PEI instrument is validated using the Cronbach's Alpha formula.
+
+While standard Perceived Personalization Scales are commonly used in e-commerce to determine if a system correctly recommends products, gig workers require contextual empathy, not product recommendations. Therefore, the standard scale was adapted into the PEI to measure environmental personalization. PEI evaluates whether the user felt the Gemma 3 LLM and the adaptive triggers accurately understood their temporary environmental constraints (e.g., being in a rush, feeling physically exhausted), proving the system acts as a context-aware companion rather than a static tool. Example items include:
 
 \begin{enumerate}
 	\item The ``Rush Hour'' interface accurately anticipates my need for a faster input method during my busy shifts.
 	\item The chatbot's responses felt specifically tailored to my unique mood history rather than being generic or automated.
-	\item The application effectively accommodates my irregular schedule as a student with a side gig.
-	\item The adaptive input features (e.g., voice logging, one-tap emojis) are highly relevant to my physical context when I am working.
+	\item Interface successfully hides unnecessary features and only shows me what I need.
+\end{enumerate}
+
+\subsubsection{Comparative Justification of Evaluation Metrics}
+
+To ensure the evaluation framework aligns with the specific cognitive and environmental constraints of non-traditional workers, the selected metrics were deliberately adapted from traditional HCI and clinical benchmarks. Table \ref{tab:metrics-comparison} outlines the theoretical justification for why standard metrics are insufficient for this demographic and how the selected metrics (ToT, ERI, PEI) provide a more accurate evaluation of context-aware mHealth interventions.
 	\item The chatbot provides conversational insights that are directly applicable to my personal burnout triggers.
 	\item The application feels like it understands my personal time limitations and cognitive exhaustion.
 	\item During high-stress periods, the interface successfully hides unnecessary features and only shows me what I need.
@@ -142,61 +238,29 @@ Table \ref{tab:literature-review} presents a summary of prior studies related to
 
 \begin{table}[p]
 \centering
-\small
-\setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{0.95}
-\caption{Summary of Prior Studies}
-\label{tab:literature-review}
-\begin{tabular}{>{\raggedright\arraybackslash}p{0.20\textwidth}
-				  >{\centering\arraybackslash}p{0.05\textwidth}
-				  >{\raggedright\arraybackslash}p{0.13\textwidth}
-				  >{\raggedright\arraybackslash}p{0.17\textwidth}
-				  >{\raggedright\arraybackslash}p{0.19\textwidth}
-				  >{\raggedright\arraybackslash}p{0.17\textwidth}}
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\renewcommand{\arraystretch}{0.8}
+\caption{Comparative Justification of Selected Usability Metrics}
+\label{tab:metrics-comparison}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.18\textwidth}
+			  >{\raggedright\arraybackslash}p{0.18\textwidth}
+			  >{\raggedright\arraybackslash}p{0.18\textwidth}
+			  >{\raggedright\arraybackslash}p{0.42\textwidth}}
 \hline
-\textbf{Title} & \textbf{Year} & \textbf{Author(s)} & \textbf{Methods} & \textbf{Main Findings} & \textbf{Gap / Limitations} \\
+\textbf{Evaluation Dimension} & \textbf{Traditional Benchmark} & \textbf{Selected Metric} & \textbf{Justification for Contextual Adaptation} \\
 \hline
-Good Gig, Bad Gig: Autonomy and Algorithmic Control in the Gig Economy & 2019 & Wood et al. & Qualitative interviews ($n=150$, global including Indonesia) & Gig work offers flexibility but algorithmic control causes high stress and burnout. & Lacks focus on digital interventions; global sample, not specific to young Indonesians. \\
+Interaction Efficiency & Task Success Rate (TSR): Did the user finish the task? & Time on Task (ToT): How many seconds did it take? & A basic mood tracker is simple enough that TSR will invariably hit a ``ceiling effect'' (near 100\% success). ToT is required because it acts as a proxy for cognitive friction. For an exhausted gig worker, success is not enough; the interaction must be mathematically fast. \\
 \hline
-World Employment and Social Outlook & 2025 & ILO & Secondary data analysis from global surveys including Indonesia & 41\% of gig workers in Indonesia experience income uncertainty, increasing burnout risk by 50--60\%. & Aggregate data; lacks details on mHealth interventions for gig workers. \\
+Affective / Emotional Impact & PANAS (Clinical) \& MAUQ (Mechanical): Are you depressed? / Is the app useful? & Emotional Response Index (ERI): Did this specific interaction reduce your immediate frustration? & PANAS is a broad clinical tool designed for mood measurement over weeks, too slow for a 20-second interaction. MAUQ evaluates mechanical utility but ignores emotional relief. ERI merges these to measure immediate psychological relief. \\
 \hline
-Gambaran Burnout pada Mahasiswa Pekerja Paruh Waktu & 2024 & Syiah Kuala Psychology Journal & Cross-sectional survey ($n=200$ part-time students in Aceh) & 91\% of students with side gigs experience burnout due to schedule conflicts; main factor: algorithmic pressure. & No evaluation of digital interventions; limited local sample, not national. \\
-\hline
-Digital Interventions for Gig Workers & 2025 & JMIR Human Factors & Scoping review of 50+ studies & mHealth apps like mood trackers reduce stress in gig workers by up to 20\%, but lack adaptability. & Minimal studies on adaptive UI; global focus, gap in Indonesian context. \\
-\hline
-Understanding Communication Patterns in Coping with Stress in Indonesia's Gig Economy & 2025 & Juddi et al.\ (Unpad) & Qualitative phenomenological (interviews $n=5$ gig drivers in Bandung) & Mutual-aid communities reduce stress, but platform algorithms cause exhaustion. & Lacks digital interventions; small sample, suggests multi-case studies with government/platform involvement. \\
-\hline
-Work Support and Resilience: Mediating Roles of Stress and Health Among Indonesian Gig Workers & 2025 & ResearchGate & SEM-PLS survey ($n=200$ gig workers) & Stress mediates the relationship between support and resilience; gig workers vulnerable to health issues. & Non-digital focus; needs longitudinal studies for tech interventions. \\
-\hline
-The Influence of Digital Platforms on Gig Workers: A Systematic Literature Review & 2025 & Alauddin et al. & PRISMA review (18 articles, 2019--2023) & Platforms offer flexibility but algorithmic control and lack of protection cause burnout. & Lacks focus on Indonesian region; gap in regulation and adaptive interventions. \\
-\hline
-What Drives Gig Worker Success? Investigating the Impact of Relevant Experience and Self-Directed Learning & 2025 & Putra et al.\ (UMY) & SEM-PLS survey ($n=235$ freelancers, Indonesia--Malaysia) & Experience and self-learning improve performance, but intrinsic motivation does not moderate. & Cross-sectional; gap in longitudinal studies and digital tools for learning. \\
-\hline
-Analyzing the Effects of Workload, Work Flexibility, Income Security, and Technological Support on Gig Workers' Productivity & 2025 & Devi et al. & Multiple regression survey ($n=$ gig workers in Jabodetabek) & Technological support dominantly reduces stress and increases productivity. & Not specific to adaptive UI; urban sample, gap in rural areas. \\
-\hline
-Vulnerable Flexibility: An Analysis of the Representation of Gig Workers' Sustainability in Indonesian Digital Media & 2025 & Murda et al. & Qualitative CDA (120+ media texts, 2023--2025) & Media glorifies flexibility but ignores vulnerabilities; needs cultural recognition. & Focus on representation; gap in empirical mHealth interventions. \\
-\hline
-The Gig Economy as a Stepping Stone: Career Trajectories of Online Platform Workers in Indonesia & 2023 & Permana (LSE) & Interviews ($n=50$ Indonesian freelancers) & Gig work as a stepping stone but algorithmic control causes isolation and burnout. & Career focus; gap in digital health interventions. \\
-\hline
-Transformative Dynamics of the Gig Economy: Technological Impacts, Worker Well-Being and Global Research Trends & 2025 & Srihita et al. & Bibliometric analysis (549 Scopus documents) & Technology improves well-being but causes precarity; emerging themes: worker well-being. & Relies on Scopus; gap in sector-specific and algorithmic ethics. \\
-\hline
-Mood Tracker App With AI Insights: A UX/UI Case Study & 2025 & Reddy & UX/UI case study (design prototype) & Adaptive AI insights increase emotional awareness; playful UI reduces stress. & Not empirical; gap in real-user evaluation for gig workers. \\
-\hline
-UX for Mental Health: Designing Apps to Promote Wellness and Therapy, Latest Trends in 2025 & 2025 & Vrunik Design & Review of UX trends & Personalization and calming elements are effective; examples include Happify mood tracking. & Non-empirical; gap in Indonesian studies and gig-specific context. \\
-\hline
-Enhancing Wellbeing Through a UX/UI Optimized Mental Health App & 2025 & Saithong et al. & Pre-post prototype evaluation ($n=50$ students) & Adaptive UX/UI increases resilience and engagement; positive correlation. & Prototype phase; gap in cultural adaptation and long-term effects. \\
-\hline
-The Influence of Digital Burnout, Screen Time, and Self Control on the Mental Health of Gen Z & 2025 & Nugraheni et al. & SEM-PLS survey ($n=100$ Jakarta students) & Digital burnout and screen time predict poor mental health; stress mediates. & Cross-sectional; limited sample, gap in adaptive interventions. \\
-\hline
-Effectiveness of Digital Interventions in Reducing Occupational Stress & 2024 & Indra et al.\ (PMC) & Systematic review (15 RCTs) & Digital apps reduce stress for 3--12 months; app-based interventions dominant. & High heterogeneity; gap in LMICs like Indonesia. \\
-\hline
-A Culturally Adapted Internet-Delivered Mindfulness Intervention & 2025 & Listiyandini et al. & RCT ($n=156$ Indonesian students) & Online mindfulness reduces distress ($g=0.48$--$1.18$); sustained for 1 month. & Short follow-up; gap in cost-effectiveness and adaptive UI. \\
+System Contextualization & Perceived Personalization Scale (PPS): Did the algorithm recommend the right product? & Personalization Effectiveness Index (PEI): Did the app understand your environmental constraints? & Standard PPS is used in e-commerce for product recommendations. For mental health, gig workers require environmental empathy. PEI shifts focus from product recommendations to measuring if Gemma 3 LLM and ``Rush Hour'' triggers accommodated erratic schedules. \\
 \hline
 \end{tabular}
 \end{table}
 
-From the review of prior studies, it is evident that gig and non-traditional workers in Indonesia, including students with side gigs or part-time jobs, face a high risk of burnout due to factors such as algorithmic control, income uncertainty, social isolation, and schedule conflicts \cite{wood2019goodgig, juddi2025gigcommunication, syiahkuala2024burnout}. Several studies have demonstrated the effectiveness of digital interventions, such as mHealth applications, mood trackers, and chatbots, in reducing stress symptoms while enhancing self-awareness and resilience \cite{jmir2025digitalinterventions, listiyandini2025mindfulness, saithong2025mhapp}. However, most of these studies remain general, cross-sectional, or focused on global populations, with limited exploration of adaptive UI/UX that specifically addresses cognitive constraints and irregular work schedules among young gig workers in Indonesia.
+\section{Conclusion on Literature Review}
 
-The primary gap identified is the scarcity of local studies integrating chatbot-based mood trackers with adaptive elements---such as one-tap input, voice options, and contextual personalization---along with evaluations using metrics that encompass emotional and personalization aspects (e.g., ToT, ERI, and PEI). Existing research more frequently assesses general effectiveness without accounting for high cognitive load or the flexible yet unpredictable schedules of non-traditional workers.
+The comprehensive review of literature from 2019--2025 reveals that gig workers and non-traditional workers in Indonesia face significant burnout risks, exacerbated by algorithmic control, income uncertainty, and schedule conflicts. While existing digital interventions (mHealth apps, mood trackers, chatbots) show promise in reducing stress by up to 20\%, current research lacks localized evaluations of adaptive UI/UX specifically designed for young Indonesian gig workers with high cognitive load.
 
-Therefore, this study addresses this gap by designing an adaptive UI/UX prototype for a Gemma 3-based mood tracker application specifically targeted at Universitas Gadjah Mada (UGM) students with side gigs, as a subset of young gig workers. The evaluation employs a hybrid approach (in-person observed sessions combined with asynchronous 7-day usage) using three key metrics: ToT for task efficiency under time constraints, ERI for positive emotional impact, and PEI for personalization effectiveness. This is expected to provide novel contributions to digital mental health interventions for non-traditional workers in Indonesia.
+This study bridges this gap by proposing an adaptive UI/UX mood tracker integrated with the Gemma 3 API, evaluated using three theoretically justified metrics: Time on Task (ToT) for efficiency, Emotional Response Index (ERI) for affective impact, and Personalization Effectiveness Index (PEI) for contextual awareness. The evaluation design combines in-person controlled sessions with 7-day asynchronous usage to capture both immediate and sustained effects. By grounding the intervention in established theoretical frameworks (Cognitive Load Theory, Hick's Law, CBT principles, and ISO standards), this research is expected to provide evidence-based contributions to digital mental health support for non-traditional workers in Indonesia.
