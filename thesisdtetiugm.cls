@@ -1,16 +1,12 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%  Filename: main.tex
-%%%  ---
-%%%  Template for Bachelor Thesis at DTETI UGM   		
-%%%  Created using thesisdtetiugm.cls
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  Filename: thesisdtetiugm.cls
+%%%  Class File  for Master Thesis at DTETI UGM
 %%%  --- 
-%%%  Original Written by Canggih Puspo Wibowo
+%%%  Written by Canggih Puspo Wibowo
 %%%  [canggihpw@gmail.com]
-%%%
-%%% Developed by Dr.-Ing. Yohan Fajar Sidik [DTETI FT UGM]
-%%% [yohanfajarsidik@ugm.ac.id]
-%%% Github repo: https://github.com/Dr-Sidik/template_thesis_latex_dteti
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  ---
+%%%  This class file can be freely modified
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %======================================
 %% Identification
@@ -31,6 +27,9 @@
 \RequirePackage{calc}%Simple arithmetic lib
 \RequirePackage{pdfpages} %include pdf file in latex
 %\RequirePackage{titlesec}
+
+
+
 
 %======================================
 %% Option Declaration
@@ -272,7 +271,7 @@
 				\vfill
 				\textbf{
 					\iftoggle{lang}
-					{\scalebox{1}{\MakeUppercase{Program Sarjana Program Studi \@program}}}
+					{\MakeUppercase{Program Sarjana Program Studi \@program}}
 					{\MakeUppercase{\@program \vspace{1em} Program}}\\
 					\iftoggle{lang}{\scalebox{1.0}[1.0]{\MakeUppercase{\@departmentIna}}}{\MakeUppercase{\@departmentEng}} \\
 					\iftoggle{lang}{\MakeUppercase{\@facultyIna}}{\MakeUppercase{\@facultyEng}}
@@ -417,8 +416,10 @@
 					\begin{tabular}{ccc}
 						\iftoggle{lang}{Dosen Pembimbing I}{Supervisor I} &\hspace{2cm} & \iftoggle{lang}{Dosen Pembimbing II}{Supervisor II} \\
 						\vspace{0.3cm} & \vspace{0.3cm} & \vspace{0.3cm}\\
-						\textbf{\underline{\scalebox{.7}[1.0]{\getsupervisor{1}{1}}}}& &
-					              \textbf{\underline{\scalebox{.7}[1.0]{\getsupervisor{2}{1}}}} \\
+						\textbf{\underline{\scalebox{.8}[1.0]{\getsupervisor{1}{1}}}}& &
+					              \textbf{\underline{\scalebox{.8}[1.0]{\getsupervisor{2}{1}}}} \\
+                        %   \textbf{\underline{\getsupervisor{1}{1}}}& &
+					      %        \textbf{\underline{\getsupervisor{2}{1}}} \\
 						\textbf{\getsupervisor{1}{2}} & & \textbf{\getsupervisor{2}{2}}\\
 					\end{tabular}
 				\end{center}
@@ -896,20 +897,8 @@
 	\input{#1}
 }
 
-\newcommand{\appendixtables}{
-  \renewcommand{\thetable}{L.\arabic{table}}%
-  \setcounter{table}{0}%
-}
-
-\newcommand{\appendixfigures}{
-  \renewcommand{\thefigure}{L.\arabic{figure}} 
-  \setcounter{figure}{0} 
-}
-
 %----------------
 % List
 %---------------
-
-\setlist[enumerate,1]{leftmargin=2em, label=\arabic*., topsep=0pt, itemsep=0pt, partopsep=1ex, parsep=1ex}
-\setlist[itemize,1]{align=parleft, left=0pt, label=•, itemsep=0pt, topsep=0pt, partopsep=1ex, parsep=1ex}
-
+\setlist[enumerate]{topsep=0pt,itemsep=0ex,partopsep=1ex,parsep=1ex}
+\setlist[itemize]{align=parleft,left=4em,topsep=0pt,itemsep=0ex,partopsep=1ex,parsep=1ex}

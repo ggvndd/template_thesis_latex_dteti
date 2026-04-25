@@ -93,24 +93,27 @@ Pada blok algoritma kedua, tidak perlu ditambahkan caption dan label, karena sud
 
 Untuk membuat tabel panjang yang melebihi satu halaman, kita dapat mengganti kombinasi \textit{table + tabular} menjadi \textit{longtable} dengan contoh sebagai berikut.
 
-\begin{longtable}{| c | c |} 
+\begin{table}[h]
 	\caption{Contoh tabel panjang}
-	\label{tab:myfirstlongtable} \\
-	\hline
-	header 1 & header 2 \\
-	\hline \hline
-	foo & bar \\ \hline 
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-	foo & bar \\ \hline
-\end{longtable}
+	\label{tab:myfirstlongtable}
+	\centering
+	\begin{tabular}{| c | c |}
+		\hline
+		header 1 & header 2 \\
+		\hline \hline
+		foo & bar \\ \hline 
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+		foo & bar \\ \hline
+	\end{tabular}
+\end{table}
 
 
 \subsubsection{Menulis formula terpisah halaman}

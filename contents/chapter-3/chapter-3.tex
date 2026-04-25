@@ -1,54 +1,309 @@
-\chapter{Metode Penelitian}
+\chapter{Research Methodology}
 
-Bab ini menjelaskan metode atau cara yang digunakan dalam penelitian ini untuk 
-mencapai maksud dan tujuan seperti yang tertulis dalam sub-bab 1.3 [jika diinginkan, kalian dapat menuliskan Kembali tujuan penelitian yang ingin dicapai di sini].
+\section{Research Type and Approach}
 
-\section{Alat dan Bahan Tugas akhir (Opsional)}
+This study falls under the category of research and development (R\&D), aimed at designing and developing a prototype mobile application featuring adaptive UI/UX for a mood tracker integrated with a chatbot, to support burnout management among non-traditional workers \cite{sugiyono2019metodologi}. The approach adopted is a Literature-Driven Iterative Design, heavily inspired by the core principles of human-centered design for interactive systems \cite{iso9241210}.
 
-\subsection{Alat Tugas akhir}
-
-Alat-alat yang digunakan pada tugas akhir ini berupa perangkat keras maupun perangkat lunak sebagai sarana pendukung antara lain. Kemukakan secara detail sesuai dengan kebutuhan tugas akhir dan juga tambahkan spesifikasi minumum sehingga peneliti lain yang hendak melakukan hal yang sama bisa melakukannya :
+The selection of this approach is justified by the research focus on adapting the interface to the specific, well-documented context of users---namely, students with side gigs or part-time jobs who experience high cognitive load and irregular schedules. This approach enables a structured, iterative process comprising the following key stages:
 
 \begin{enumerate}
-	\item \textit{Notebook} dengan spesifikasi minumum sistem operasi Windows 8, \textit{processor} Intel Core i3 2330M CPU @ 2,2 GHz, memori 4GB DDR3, grafis NVIDIA GeForce GT 610 (4GB), hardisk 500GB. Pada tugas akhir ini digunakan Windows 10, Intel Core i7 4570M CPU, Memori 4GB DDR 3, grafis Intel HD4300. 
-	\item \textit{Smartphone} dengan spesifikasi tipe minimum, OS Android OS v4.1.2 (Jelly Bean),CPU Dual-core 800 MHz, GPU Mali-400, Internal 4 GB, 768 MB RAM. Pada tugas akhir ini digunakan ....
-	\item \textit{Game creation platform} versi 3.3.2 untuk Stencyl dan Construct2.
-	\item CORELDRAW X7, Tiled dan GIMP 2
+    \item Understand and specify the context of use and user requirements through a comprehensive synthesis of existing literature.
+    \item Produce design solutions and theoretical UI adaptations (creating prototypes and alternatives based on academic findings).
+    \item Evaluate designs against requirements (testing interaction efficiency and emotional impact face-to-face with real users) \cite{norman2013design}.
 \end{enumerate}
 
-\subsection{Bahan Tugas akhir}
+This approach is particularly suitable for mHealth applications like mood trackers, where usability encompasses not only mechanical efficiency but also emotional impact and personalization, as discussed in Chapter~2's literature review.
 
-Bahan tugas akhir adalah segala sesuatu yang bersifat fisik atau digital yang digunakan untuk kebutuhan tugas akhir. Bahan tugas akhir dapat berupa:
+The study incorporates mixed methods (combining quantitative and qualitative elements) for evaluation. Quantitative data are derived from usability metrics such as Time on Task (ToT), Emotional Response Index (ERI), and Personalization Effectiveness Index (PEI), while qualitative data are obtained from observations and user feedback during testing. A face-to-face testing approach is applied to simulate real-world usage scenarios for non-traditional workers with time constraints. The timeline for this research is as follows:
 
-\begin{enumerate}
-	\item Bahan habis pakai. Bahan yang digunakan untuk tugas akhir. Sebagai contoh 
-	mungkin dibutuhkan kertas transparansi, baterai, atau yang lain 
-	\item Bahan yang berupa data atau informasi yang menjadi dataset tugas akhir. Dataset tugas akhir dapat berupa:
-	\begin{itemize}
-		\item Dataset pihak lain yang diperoleh dengan izin atau dalam lisensi yang diizinkan untuk digunakan secara langsung 
-		\item Dataset pihak pertama yang disusun sendiri melalui quisioner, observasi, atau interview 
-		\item Dokumen panduan yang mengacu pada standar, hasil tugas akhir, atau artikel yang disitasi dan digunakan.
-	\end{itemize}
-	
-\end{enumerate}
+\begin{itemize}
+    \item Dec 2025 -- Jan 2026: Literature review \& context understanding
+    \item Feb 2026: User requirements gathering, initial design, and app development
+    \item Mar -- Apr 2026: App development and usability testing while undergoing data analysis
+    \item May 2026: Data analysis, revisions, \& final evaluation
+\end{itemize}
 
+This timeline assumes a typical final-year thesis schedule; actual dates can be adjusted based on progress. In this study, research variables are defined as follows to support the evaluation of design effectiveness:
 
+\begin{itemize}
+    \item \textbf{Independent variable:} Adaptive UI/UX features (Rush Hour to theoretically decrease time needed for users to use the app).
+    \item \textbf{Dependent variables:} Interaction Efficiency measured via Time on Task (ToT), Emotional Response Index (ERI), and Personalization Effectiveness Index (PEI).
+    \item \textbf{Control variables:} Participant age (18--25 years), side gig intensity (minimum 10 hours/week), and digital literacy level (tech-savvy UGM students).
+\end{itemize}
 
-\section{Metode yang Digunakan}
+This approach enables the measurement of adaptive features' impact on usability and emotional experience, while controlling external factors to enhance internal validity. The resulting app, built using Flutter for cross-platform mobile development and the Gemma~3 4B API for chatbot integration, is expected to be not only technically functional but also effective in reducing burnout through adaptive elements such as one-tap input, voice options, and personalized prompts.
 
-Bagian ini membahas metode atau cara yang akan digunakan dalam penelitian, tahapan 
-penerapan metode, dan desain penelitian (misalnya apakah penelitian akan menggunakan 
-eksperimen di Laboratorium atau di lapangan, misalkan saja penelitian biomedis atau 
-penelitian alat ukur hama yang dapat dilakukan di laboratorium ataupun di lapangan, atau menggunakan metode survei (misalnya untuk teknologi Informasi), studi kasus, atau analisis dengan perangkat lunak (ETAP, LTSpice, dst), atau \textit{prototyping} (pembuatan perangkat keras).
+\section{Research Stages}
+\label{sec:stages}
 
-Bagian ini juga membahas bagaimana data [akan] dianalisis, apakah dengan membandingkan keluaran beberapa alat ukur, membandingkan dengan standar atau bagaimana.
+This study follows a literature-driven iterative design cycle, adapted to the context of developing a mobile health (mHealth) application. The research process is divided into four interconnected main phases, with the possibility of iteration based on evaluation results. The overall process began on December 22, 2025, and is targeted for completion by June/July 2026, as illustrated in the Gantt chart in Figure~\ref{fig:gantt}.
 
-\section{Alur Tugas Akhir}
+\begin{figure}[h]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering [Gantt Chart --- to be inserted]}}
+    \caption{Research Timeline Gantt Chart}
+    \label{fig:gantt}
+\end{figure}
 
-Menguraikan prosedur yang akan digunakan dan jadwal atau alur penyelesaian setiap 
-tahap. Alur penelian ini dapat disajikan dalam bentuk diagram. Diagram dapat disusun dengan aturan yang baik semisal menggunakan \textit{flowchart}. Aturan dan tutorial pembuatan \textit{flowchart} dapat dilihat di \textcolor{blue}{http://ugm.id/flowcharttutorial}. Setelah menggambarkannya, penulis wajib menjelaskan langkah-langkah setiap alur tugas akhir dalam sub bab tersendiri sesuai dengan kebutuhan.
+\textbf{Phase 1: Contextual Understanding via Literature Review (Requirement Gathering)}
 
-\section{Etika, Masalah, dan Keterbatasan Penelitian (Opsional))}
+Instead of primary user surveys, the initial requirements for the adaptive UI were formulated through a comprehensive synthesis of existing literature on gig economy burnout, cognitive load theory, and mHealth usability. By analyzing secondary data regarding the pain points of non-traditional workers---such as time constraints, algorithmic pressure, and cognitive exhaustion---the functional requirements (e.g., quick mood logging, LLM chatbot integration) and non-functional requirements (e.g., adaptive UI for cognitive constraints) were established. This literature-driven approach ensures the prototype addresses scientifically documented needs.
 
-Bagian ini membahas pertimbangan etis penelitian dan [potensi] masalah serta
-keterbatasannya. Jika menyangkut penelitian dengan makhluk hidup, maka dibutuhkan adanya \textit{ethical clearance}, di bagian ini hal itu akan dibahas. Demikian juga tentang keterbatasan ataupun masalah yang akan timbul.
+\textbf{Phase 2: Design Solutions}
+
+Based on the theoretical requirements established in Phase~1, the adaptive UI/UX was designed. Key activities include:
+
+\begin{itemize}
+    \item Development of the ``Rush Hour'' adaptive feature: Designing a simplified UI state triggered by user-defined time intervals.
+    \item High-fidelity UI mapping: Structuring the visual hierarchy to prioritize primary actions (e.g., one-tap logging) to minimize extraneous cognitive load.
+    \item System prompt engineering: Designing the ethical guardrails and empathetic persona for the Gemma~3 NLU integration.
+\end{itemize}
+
+\textbf{Phase 3: High-Fidelity Functional Prototyping}
+
+In this phase, the design is implemented into a functional, cross-platform mobile application. Main activities include:
+
+\begin{itemize}
+    \item Frontend development using Flutter: Utilizing the Dart programming language to build a natively compiled application for both Android and iOS from a single codebase.
+    \item Integration of LLM Backend Architecture: Utilizing the Gemma~3 4B model via API as the core conversational engine, replacing traditional rule-based intent routing. The Flutter client communicates with the Gemma~3 API to process unstructured user input and generate dynamic responses based on logged mood history.
+    \item Implementation of the ``Rush Hour'' trigger: Programming the local state management in Flutter to transition the UI based on the user's predefined high-stress time intervals.
+\end{itemize}
+
+\textbf{Phase 4: Evaluation}
+
+Evaluation employs a controlled, face-to-face A/B testing approach to simulate real-world usage and measure interaction efficiency.
+
+\begin{itemize}
+    \item \textbf{Controlled Face-to-Face Sessions (30 respondents):} Individual or in small groups up to 4 people, in-person sessions (lasting approximately 20--30 minutes) involving task-based testing. Participants will be asked to complete a specific scenario (e.g., ``Log your mood and trigger in a rushed situation'') using both the standard UI (Condition~A) and the adaptive ``Rush Hour'' UI (Condition~B).
+    \item \textbf{Data Collection:} The researcher will directly observe and record the Time on Task (ToT) in seconds for both conditions. Immediately following the tasks, participants will fill out a digital questionnaire (via Google Forms) to assess the Emotional Response Index (ERI) and Personalization Effectiveness Index (PEI).
+\end{itemize}
+
+Evaluation results are then analyzed statistically to draw conclusions on the prototype's effectiveness. This phase is scheduled for May to June 2026.
+
+\section{Population and Sample}
+
+The population of this study consists of active students at Universitas Gadjah Mada (UGM) who engage in side gigs or part-time jobs, serving as a representative subset of young non-traditional workers (gig workers) in Indonesia. According to the latest data from the Central Bureau of Statistics (BPS) in August 2025, part-time workers accounted for approximately 24.77\% of the national workforce (around 36.29 million people out of a total employed population of 146.54 million), with significant overlap in the informal sector and platform-based gig work, predominantly among young individuals \cite{bps2025tenagakerja}. The estimated number of active students at UGM is around 55,000--60,000, based on an annual intake of approximately 10,629 new students in 2025 \cite{ugm2025admission}. A substantial subset of these students is involved in side gigs, driven by the need to cover living expenses and gain experience.
+
+The selection of this population is justified for the following reasons:
+
+\begin{itemize}
+    \item Students with side gigs represent young gig workers vulnerable to burnout due to the double burden of academic and work responsibilities (as discussed in Chapter~2).
+    \item UGM students generally possess high digital literacy and are quick to adopt mHealth applications.
+    \item Recruitment is feasible within the campus environment, making the study practical given the limited timeline.
+\end{itemize}
+
+The sample size for this study is established at 30 participants, selected using purposive sampling to meet the strict inclusion criteria. This entire sample will participate in the controlled, face-to-face evaluation phase. The justification for this specific sample size is grounded in quantitative Human-Computer Interaction (HCI) evaluation standards and statistical reliability:
+
+\begin{itemize}
+    \item \textbf{Quantitative Usability Standards:} While qualitative usability testing typically requires only 5 users to uncover fundamental flaws, quantitative usability testing---which relies on precise metrics such as Time on Task (ToT)---requires a larger baseline. Industry standards established by the Nielsen Norman Group recommend a minimum of 20 participants to achieve statistically reliable usability metrics and tight confidence intervals \cite{nielsen2006quantitative}. Targeting 25--30 participants provides a robust buffer against outliers.
+    \item \textbf{Within-Subjects Statistical Power:} The evaluation employs a within-subjects A/B testing design, where each participant tests both the standard and adaptive interfaces. Because individual variance is controlled (participants act as their own baseline), the statistical power is significantly higher than in between-subjects designs. A sample of 30 is sufficient to achieve high statistical power for paired samples t-tests and satisfies the Central Limit Theorem for normal data distribution \cite{field2013statistics}.
+    \item \textbf{Sample Homogeneity:} The purposive sampling criteria create a highly homogeneous demographic (tech-savvy UGM students aged 18--25 with strict side gig parameters). In experimental design, high population homogeneity mathematically reduces the variance in interaction behaviors, thereby requiring a smaller sample size to reach data saturation and statistical significance \cite{macefield2009sample}.
+\end{itemize}
+
+\textbf{Inclusion Criteria:}
+\begin{itemize}
+    \item Active undergraduate (S1) or vocational students from all faculties.
+    \item Engaging in side gigs or part-time work for at least 10 hours per week (e.g., online freelancing, online motorcycle taxi driving, tutoring, content creation).
+    \item Having access to an Android/iOS smartphone and willing to use the prototype application.
+    \item Aged 18--25 years.
+\end{itemize}
+
+\textbf{Exclusion Criteria:}
+\begin{itemize}
+    \item No side gig experience in the past 6 months.
+    \item Currently undergoing professional mental health treatment (for ethical reasons, to avoid potential triggers).
+\end{itemize}
+
+In qualitative usability testing, 5--15 participants are typically sufficient to identify the majority of usability issues \cite{nielsen2000fiveusers}. However, since this study also measures quantitative metrics (ToT, ERI, and PEI) and emotional/personalization impacts, a sample of 25--30 is recommended for descriptive statistical reliability and a low margin of error (approx.\ 15--20\%) \cite{nielsen2006quantitative}. The chosen sample size of 25--30 represents an optimal compromise: large enough for limited generalizability within the subset, yet feasible for recruitment and controlled face-to-face testing in the UGM campus setting.
+
+Recruitment will be conducted through digital posters, WhatsApp/Telegram groups, freelance/student worker communities, and snowball sampling from initial respondents.
+
+\section{Data Collection Techniques}
+
+Data collection in this study employs a mixed methods approach, combining primary quantitative and qualitative data to support the iterative design and evaluation process. Primary data are collected directly from participants during the face-to-face evaluation phase, while secondary data are drawn from the literature review in Chapter~2 to establish the initial design requirements.
+
+\textbf{Primary Data:}
+\begin{itemize}
+    \item \textbf{Observation and Time Measurement:} Applied during the face-to-face evaluation phase (25--30 respondents). This involves direct observation of user behavior and strict timekeeping (recording Time on Task in seconds) while the user completes task scenarios under simulated rushed conditions using both UI variations.
+    \item \textbf{Questionnaires:} Conducted immediately after the observation session using Google Forms. It utilizes a 5-point Likert scale to measure ERI (emotional response, e.g., ``This application makes me feel supported'') and PEI (personalization, e.g., ``The adaptive features matched my need for speed'').
+\end{itemize}
+
+\textbf{Secondary Data:}
+\begin{itemize}
+    \item Literature from journals (e.g., JMIR, ILO), reports (BPS August 2025 data), and studies on adaptive mHealth UI used during Phase~1 to formulate the system requirements.
+\end{itemize}
+
+These techniques ensure comprehensive data collection: qualitative data for in-depth user feedback post-interaction, and quantitative data for the primary evaluation metrics (ToT, ERI, and PEI). All data are anonymized in accordance with ethical guidelines from the Ethical Clearance Institution at Universitas Ahmad Dahlan.
+
+\begin{table}[htbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{0.95}
+    \caption{Summary of Data Collection Techniques}
+    \label{tab:datacollection}
+    \begin{tabular}{>{\raggedright\arraybackslash}p{0.17\textwidth} >{\raggedright\arraybackslash}p{0.14\textwidth} >{\raggedright\arraybackslash}p{0.25\textwidth} >{\raggedright\arraybackslash}p{0.21\textwidth} >{\centering\arraybackslash}p{0.10\textwidth}}
+    \hline
+    \textbf{Type of Data} & \textbf{Source} & \textbf{Collection Technique} & \textbf{Phase of Use} & \textbf{Resp.} \\
+    \hline \hline
+    Quantitative (ToT) & Primary & Direct observation \& session recording & Phase~4 (Face-to-Face A/B Testing) & 25--30 \\
+    \hline
+    Quantitative \& Qualitative (ERI, PEI) & Primary & Likert questionnaire (Google Forms) + open-ended feedback & Phase~4 (Post-Task Evaluation) & 25--30 \\
+    \hline
+    Supporting Theory \& Data & Secondary & Literature review \& public data & Phase~1 \& All chapters & --- \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\section{Research Procedure}
+
+The research procedure follows the iterative design and evaluation stages outlined in Section~\ref{sec:stages}, with detailed scheduling aligned with the overall timeline. The process began on December 28, 2025, and is planned to conclude the face-to-face evaluation phase by June 2026, allowing for potential minor iterations based on user feedback. The phases are as follows:
+
+\textbf{Phase 1: Contextual Understanding (January -- February 2026)}
+\begin{itemize}
+    \item Synthesis of secondary data and literature regarding non-traditional worker burnout.
+    \item Formulation of theoretical requirements: functional (quick mood logging, Gemma~3 integration) and non-functional (adaptive UI: one-tap, voice, personalization).
+\end{itemize}
+
+\textbf{Phases 2 \& 3: Design and Prototyping (March -- May 2026)}
+\begin{itemize}
+    \item Design of wireframes and high-fidelity prototypes in Figma based on requirements.
+    \item Implementation of the application using Flutter (frontend) and the Gemma~3 4B API (chatbot backend).
+    \item Internal testing and design iterations (bug fixing, internal usability checks).
+\end{itemize}
+
+\textbf{Phase 4: Face-to-Face Evaluation (May -- June 2026)}
+\begin{itemize}
+    \item Full sample recruitment (25--30 participants).
+    \item Face-to-face sessions: Individual sessions (20--30 minutes). Conducting A/B task scenarios (e.g., ``Log mood in a rushed post-side-gig simulation'').
+    \item Real-time measurement of Time on Task (ToT) using a stopwatch/timer.
+    \item Distribution of final questionnaire (ERI/PEI) via Google Forms immediately after the tasks.
+    \item Data analysis and final conclusions.
+\end{itemize}
+
+Figure~\ref{fig:flowchart} illustrates the research procedure flowchart, with iteration arrows from the Evaluate phase back to Design/Prototype for major revisions.
+
+\begin{figure}[h]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{\centering [Research Procedure Flowchart --- to be inserted]}}
+    \caption{Research Procedure Flowchart}
+    \label{fig:flowchart}
+\end{figure}
+
+\section{Research Instruments and Evaluation}
+
+The research instruments include tools for data collection and prototype evaluation, designed in accordance with the literature-derived requirements and the specific evaluation metrics established in Chapter~2.
+
+\subsection{Application Prototype}
+
+\textbf{Design:} Figma for high-fidelity interactive prototypes (wireframes to adaptive mockups).
+
+\textbf{Implementation:} Flutter for a functional, cross-platform mobile app (Android/iOS), integrated with the Gemma~3 4B API for the context-aware mood tracking chatbot and empathetic responses.
+
+\textbf{Key features:} One-tap emoji logging, simple trend visualization, and personalized chat responses based on the mood history.
+
+\textbf{The ``Rush Hour'' Adaptive Trigger Mechanism:}
+
+The core contextual adaptation in this prototype is the ``Rush Hour'' mode. Unlike complex heuristic-based triggers that require continuous background tracking (which drains mobile batteries and raises privacy concerns), this system utilizes a deterministic, user-defined time interval mechanism. During the onboarding process (or via the profile settings), users input their typical high-stress or busy schedule windows (e.g., a part-time shift from 18:00 to 22:00). When the device's local clock enters this predefined interval, the application automatically transitions into ``Rush Hour'' mode. In this state, the UI undergoes a strict visual simplification: secondary navigation tabs, complex settings, and detailed analytics are hidden. The interface focuses exclusively on the three most critical features: (1)~Rapid Mood Logging (via one-tap), (2)~Simplified Mood History, and (3)~The Chatbot interface. Once the time interval concludes, the application seamlessly reverts to the standard, fully-featured interface.
+
+\subsection{Data Collection Instruments}
+
+\begin{itemize}
+    \item \textbf{Questionnaires:} Google Forms with 5-point Likert scales and open-ended questions.
+    \item \textbf{Observation:} Session recordings (with consent) and think-aloud notes.
+\end{itemize}
+
+\subsection{Evaluation Metrics}
+
+\begin{itemize}
+    \item \textbf{Time on Task (ToT):} Measured in seconds. Applied through a within-subjects A/B testing approach where participants complete the same mood-logging task using both the standard UI and the adaptive ``Rush Hour'' UI. The goal is to identify statistically significant reductions in interaction time.
+    \item \textbf{ERI:} 8--10 Likert items (e.g., ``This application makes me feel calmer''---strongly disagree to agree), adapted from the MAUQ and PANAS frameworks. Evaluated via average index score.
+    \item \textbf{PEI:} 8--10 Likert items (e.g., ``The adaptive features and chatbot prompts feel highly relevant to my side gig situation''), adapted from the Perceived Personalization Scale. Evaluated via average index score.
+    \item \textbf{Instrument validation:} Pilot test on 3--5 initial respondents for reliability (Cronbach's alpha target $>$0.7 using Excel/SPSS).
+\end{itemize}
+
+\begin{table}[htbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{0.95}
+    \caption{Summary of Instruments and Evaluation Metrics}
+    \label{tab:instruments}
+    \begin{tabular}{>{\raggedright\arraybackslash}p{0.17\textwidth} >{\raggedright\arraybackslash}p{0.24\textwidth} >{\raggedright\arraybackslash}p{0.22\textwidth} >{\raggedright\arraybackslash}p{0.24\textwidth}}
+    \hline
+    \textbf{Instrument/Metric} & \textbf{Description} & \textbf{Phase of Use} & \textbf{Scale/Formula} \\
+    \hline \hline
+    Application Prototype & Flutter-based App + Gemma~3 4B API & Phases 2--4 & Functional: one-tap, voice, personalization \\
+    \hline
+    Questionnaire & Google Forms (Post-task evaluation) & Phase~4 & 5-point Likert + open-ended feedback \\
+    \hline
+    Time on Task (ToT) & Measurement of time required to successfully complete a task (Standard UI vs.\ ``Rush Hour'' UI) & Phase~4 (Face-to-Face A/B Testing) & Continuous scale (measured in seconds) \\
+    \hline
+    ERI & Emotional response (calm/supported), adapted from MAUQ and PANAS & Phase~4 (Post-Task Evaluation) & Average Likert score (8--10 items) \\
+    \hline
+    PEI & Personalization effectiveness (relevance to situation), adapted from Perceived Personalization Scale & Phase~4 (Post-Task Evaluation) & Average Likert score (8--10 items) \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\section{Research Ethics}
+
+This study adheres to the ethical principles for research involving human subjects, in accordance with the guidelines of the Research Ethics Institution (LEP) and the Declaration of Helsinki. Ethical clearance has been submitted to the Ethics Commission at Universitas Ahmad Dahlan (with the approval of the thesis supervisor) and will be obtained prior to the commencement of official primary data collection.
+
+Potential emotional risks (such as discomfort when discussing burnout) are managed by immediately terminating sessions if participants exhibit signs of distress, followed by empathetic support and direct referral to the free and anonymous psychological counseling services at Universitas Gadjah Mada. The principles of beneficence and non-maleficence are prioritized, with the informed consent form clearly explaining these minimal risks. Ethical clearance is mandatory before any primary data collection begins.
+
+The key ethical principles applied include:
+
+\begin{itemize}
+    \item \textbf{Informed consent:} Every participant receives a complete explanation of the research purpose, procedures (including face-to-face A/B testing and mood logging), potential risks (e.g., emotional triggers when discussing burnout), benefits, and their right to withdraw at any time without consequences. Consent forms are signed digitally or physically.
+    \item \textbf{Anonymity and confidentiality:} Personal data (names, side gig identities) are anonymized using unique codes. Sensitive data (mood/emotion logs) are stored securely on encrypted servers (limited-access Google Drive) and deleted upon completion of analysis.
+    \item \textbf{Voluntary participation:} Participation is entirely voluntary, with small incentives (e.g., phone credit or e-wallet top-up) provided as appreciation, not coercion.
+    \item \textbf{Beneficence and non-maleficence:} The research is designed to support mental health (mood tracker as a self-help tool), with referral options to UGM counselors if participants show signs of severe burnout.
+    \item \textbf{Algorithmic Guardrails via System Prompting:} Because the chatbot relies directly on a Large Language Model (Gemma~3 4B API), strict control mechanisms are implemented at the prompt level. The model is initialized with a robust System Prompt that strictly defines its boundary as a supportive listener, explicitly forbidding it from offering clinical diagnoses or medical advice. Additionally, if pre-processing filters detect critical trigger words indicating severe psychological distress, the generative LLM response is immediately bypassed. The system relies on a hardcoded fallback to provide emergency hotline numbers and direct referrals to UGM psychological counseling services.
+\end{itemize}
+
+These procedures ensure the research is safe and responsible, particularly given the sensitive nature of mental health topics among a vulnerable population---young gig workers.
+
+\section{Data Analysis}
+
+Data analysis employs a mixed methods approach to address the research objectives: evaluating the effectiveness of the adaptive UI/UX through the metrics Time on Task (ToT), ERI, and PEI.
+
+\textbf{Quantitative Analysis:}
+\begin{itemize}
+    \item \textbf{Time on Task (ToT) data:} Calculation of interaction efficiency using descriptive statistics (mean time in seconds, standard deviation) for both the standard UI and the ``Rush Hour'' UI. A paired sample t-test will be utilized to determine if the reduction in time is statistically significant.
+    \item \textbf{ERI and PEI data:} Average scores per item and overall index (1--5 Likert scale), with reliability testing (Cronbach's alpha target $>$0.7).
+    \item \textbf{Simple inferential statistics:} Pre-post comparisons (paired t-test) or between-group comparisons (independent t-test) where applicable, to determine whether adaptive features significantly improve the metrics.
+    \item \textbf{Tools:} Google Spreadsheet or Excel for computations.
+\end{itemize}
+
+\textbf{Qualitative Analysis:}
+\begin{itemize}
+    \item \textbf{Data from think-aloud protocols and open-ended questionnaires:} Thematic analysis (manual coding or NVivo if available) to identify main themes (e.g., ``one-tap reduces cognitive effort,'' ``voice input is useful when mobile'').
+    \item \textbf{Triangulation:} Integration of qualitative insights with quantitative data for validation (e.g., verbal feedback explaining fast or slow ToT durations).
+\end{itemize}
+
+\textbf{Overall Synthesis:}
+
+Results are integrated to draw conclusions regarding prototype effectiveness (e.g., a statistically significant reduction in ToT indicates good efficiency; ERI/PEI $>$4.0 indicates positive emotional and personalization impact). This analysis supports recommendations for further adaptive UI iterations and contributes to burnout management strategies for gig workers.
+
+\begin{table}[htbp]
+    \centering
+    \small
+    \setlength{\tabcolsep}{3pt}
+    \renewcommand{\arraystretch}{0.95}
+    \caption{Summary of Data Analysis Methods}
+    \label{tab:analysis}
+    \begin{tabular}{>{\raggedright\arraybackslash}p{0.18\textwidth} >{\raggedright\arraybackslash}p{0.20\textwidth} >{\raggedright\arraybackslash}p{0.28\textwidth} >{\raggedright\arraybackslash}p{0.20\textwidth}}
+    \hline
+    \textbf{Type of Data} & \textbf{Source} & \textbf{Analysis Method} & \textbf{Tools} \\
+    \hline \hline
+    Quantitative (ToT) & Direct task observation and time measurement (Phase~4) & Descriptive (mean time in seconds, standard deviation); Inferential (paired samples t-test to compare interaction efficiency between Standard UI and ``Rush Hour'' UI) & Excel or SPSS \\
+    \hline
+    Quantitative (ERI \& PEI) & Likert questionnaire (Phase~4) & Descriptive (average score, SD); Reliability (Cronbach's alpha); Simple inferential (t-test pre-post or between groups if applicable) & Excel or SPSS \\
+    \hline
+    Qualitative (feedback, pain points) & Think-aloud observations, open-ended questionnaire & Thematic analysis (main theme coding, e.g., ``effectiveness of voice input'') & Manual (Excel) or NVivo if available \\
+    \hline
+    Mixed (triangulation) & All primary data combined & Integration of qualitative-quantitative insights for validation \& conclusions & Manual synthesis + Excel \\
+    \hline
+    \end{tabular}
+\end{table}

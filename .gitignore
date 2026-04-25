@@ -16,3 +16,8 @@
 *.fdb_latexmk
 *.fls
 *.synctex.gz
+.DS_Store
+main_edit.pdf
+archives/
+guides/
+main.pdf
